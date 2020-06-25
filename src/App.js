@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import ListProfiles from './ListProfiles.js';
 import logo from './logo.svg';
 
 /*
@@ -106,6 +107,9 @@ class App extends Component {
           <h1 className="App-title">ReactND - Coding Practice</h1>
         </header>
         <h2>Favorite Movies</h2>
+		<div>
+			<ListProfiles profiles={profiles} users={users} movies={movies} />
+		</div>
       </div>
     );
   }
