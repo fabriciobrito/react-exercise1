@@ -108,6 +108,11 @@ class App extends Component {
         </header>
         <h2>Favorite Movies</h2>
 		<div>
+			{/* On a real project this data would be on a database that could be accessed 
+            	directly from the ListProfiles component.
+            	Since the previous lessons stated that each Component should have one purpose, 
+                I decided to detach the listing from the main App.js, even though the
+                "database" was declared in this file.*/}
 			<ListProfiles profiles={profiles} users={users} movies={movies} />
 		</div>
       </div>
